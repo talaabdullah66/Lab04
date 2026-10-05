@@ -1,0 +1,32 @@
+Welcome to SWI-Prolog (threaded, 64 bits, version 10.0.2)
+SWI-Prolog comes with ABSOLUTELY NO WARRANTY. This is free software.
+Please run ?- license. for legal details.
+
+For online help and background, visit https://www.swi-prolog.org
+For built-in help, use ?- help(Topic). or ?- apropos(Word).
+
+31 ?- consult('~/Downloads/Lab04_family_facts.pl').
+true.
+
+32 ?- female(X).
+X = sara ;
+X = nora.
+
+33 ?- male(_).
+true .
+
+34 ?- parent(G, P), parent(P, faisal).
+G = ali,
+P = muhammad .
+
+35 ?- parent(ahmad, X), female(X).
+X = sara ;
+X = nora.
+
+36 ?- parent(X, ahmad), parent(X, muhammad).
+X = ali.
+
+37 ?- parent(P, khan), parent(P, nora), male(khan).
+P = ahmad.
+
+38 ?- 
